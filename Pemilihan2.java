@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Pemilihan2 {
     public static void main(String[] args) {
         Scanner input19 = new Scanner(System.in);
