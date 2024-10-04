@@ -16,28 +16,26 @@ public class Tugas {
         if (jenis.equalsIgnoreCase("kamus")) {
             System.out.println("Jenis buku: "+ jenis);
             if (jumlah > 2) {
-                diskon += 0.12;
+                diskon = 0.12;
             } else {
-                diskon += 0.10;
+                diskon = 0.10;
             }
         } else if (jenis.equalsIgnoreCase("novel")) {
             if (jumlah > 3) {
-                diskon += 0.09;
+                diskon = 0.09;
             } else if (jumlah >= 1 && jumlah <= 3) {
-                diskon += 0.08;
+                diskon = 0.08;
             } else {
-                diskon += 0;
+                diskon = 0;
             }
         } else {
             if (jumlah > 3) {
-                diskon += 0.05;
+                diskon = 0.05;
             }
         }
-
         jumlahDiskon = (harga * diskon) * jumlah;
         totalHargaBayar = (harga * jumlah) - jumlahDiskon;
 
-        System.out.println(diskon);
         System.out.println("Jumlah diskon = " + jumlahDiskon);
         System.out.println("Total harga bayar = " + totalHargaBayar);
     }
